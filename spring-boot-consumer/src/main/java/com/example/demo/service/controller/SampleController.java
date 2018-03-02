@@ -39,7 +39,6 @@ public class SampleController {
         if (maps != null) {
             for (i = 1; maps.get("param_" + i) != null; i++) {
                 Map map = new HashMap();
-                map.put("ParamType", maps.get("ParamType_" + i));
                 map.put("param", maps.get("param_" + i));
                 paramInfos.add(map);
             }
@@ -60,9 +59,6 @@ public class SampleController {
     }
 
 
-    @RequestMapping("/index")
-    public int getIntCount(){
-        return 100;
-    }
+
 
 }
